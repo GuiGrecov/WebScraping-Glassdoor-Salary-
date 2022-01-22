@@ -37,4 +37,17 @@ Como esse código participa de uma extração de dados que foram inseridos anoni
 
 Com esse nosso código seguindo nossas funções conseguimos gerar a tabela acima. Conseguimos agora salvar esse csv em formato excel e mandar de forma automática para o CEO da empresa em cada começo de semana ou em cada mês. 
 
+# 6. Arquiterura de Webscraping
 
+![image](https://user-images.githubusercontent.com/94385953/150645445-5704eb79-ea64-4ede-aae3-8e089071626a.png)
+
+* **JOB 1:** Gerar um arquivo individual para cada página que o usuário analisou pertinente. Nessa etapa usamos a função: webscraping_glassdoor(). Para roadr essa função comentada anteriormente precisamos somente salvar essas URL's em variáveis - no Notebook utilizei variáveis com nomes "page1", "page2", "page3",...
+*  **JOB 2:** Para conseguir fazer a limpeza de Dados utilizamos funções do tipo REGEX. Foi a saída mais fácil que encontrei para puxar os arquivo em um formato mais amigável para o usuário. 
+* **JOB 3:** Nesta parte das tarefas fizemos uma função nomeada como juntar_df() a qual precisa receber uma "lista" com todas as variáveis selecionada na etapa anterior. *Exemplo: No job 1 e 2 eu selecionei duas páginas para fazer o Scraping - "page1" e "page2". Com isso nesta etapa preciso agrupar essas duas variáveis em uma lista e depois colocar essa lista na função juntar_df(), desta forma: juntar_df(page_total).*
+* **JOB 4** Essa etapa é clásscia em qualquer trabalho de Web Scraping somente geramos um arquivo CSV ou um XLS com a tabela feita durante as outras etapas. 
+
+# 7. Otimizações Futuras
+
+* 1. Fazer uma agendamento no agendador do Windows, ou se for Linux utilizando uma biblioteca de agendar tarefas do Linux. 
+* 2. Utilizar bibliotecas que contenha bot's que fazem o envio para alguns e-mails de forma automática. Para o CEO receber os arquivos de forma automática em determinado intervalo de tempo 
+ 
