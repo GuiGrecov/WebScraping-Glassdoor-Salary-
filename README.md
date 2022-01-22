@@ -35,7 +35,7 @@ Como esse código participa de uma extração de dados que foram inseridos anoni
 
 # 5. Resultados
 
-![image](https://user-images.githubusercontent.com/94385953/150644908-54c974db-d671-4c0a-96e7-53feced055e4.png)
+![image](https://user-images.githubusercontent.com/94385953/150646610-5eb29742-a277-433a-92e8-3da3cd3f03c5.png)
 <br>
 Com esse nosso código seguindo nossas funções conseguimos gerar a tabela acima. Conseguimos agora salvar esse csv em formato excel e mandar de forma automática para o CEO da empresa em cada começo de semana ou em cada mês. 
 
