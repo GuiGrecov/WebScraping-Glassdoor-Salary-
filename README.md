@@ -1,7 +1,7 @@
 # WebScraping-Glassdoor-Salary
 
 ![image](https://user-images.githubusercontent.com/94385953/150644222-0aedc7c1-9855-45d4-941d-1199be58ad2b.png)
-
+<br>
 **AVISO:** O CEO citado em problema de negócio não existe. Esse webscraping foi feito apenas para demonstrar uma possibilidade de Webscraping em People Analytics!
 
 # 1. Sobre o Glassdoor
@@ -22,7 +22,9 @@ O CEO precisa saber quanto as empresas estão pagando para dois cargos: People A
 
 
 2 - Criar uma segunda função capaz de agrupar as outras páginas em um dataseet e depois juntar em um maior: 
+<br>
 ![image](https://user-images.githubusercontent.com/94385953/150644564-bad5cb8f-ecd9-4dbb-b340-0de49e7e690a.png)
+<br>
 Na imagem acima vemos que na maioria dos casos, vamos ter mais de uma página para conseguir fazer o scraping. Com isso vale criar uma segunda função que agrupe todos os dados em somente um arquivo. 
 
 
@@ -32,17 +34,17 @@ Na imagem acima vemos que na maioria dos casos, vamos ter mais de uma página pa
 Como esse código participa de uma extração de dados que foram inseridos anonimamente, pode haver alguns erros nos valores de alguns salários. **RECOMENDAÇÕES:** Caso queira retirar alguns insight dos dados, vale retirar os outliers. Por se tratar de dados anônimos e queremos um "norte" de valor em salários para pagarmos dentro da nossa empresa.
 
 # 5. Resultados
-
+<br>
 ![image](https://user-images.githubusercontent.com/94385953/150644908-54c974db-d671-4c0a-96e7-53feced055e4.png)
-
+<br>
 Com esse nosso código seguindo nossas funções conseguimos gerar a tabela acima. Conseguimos agora salvar esse csv em formato excel e mandar de forma automática para o CEO da empresa em cada começo de semana ou em cada mês. 
 
 **O RESULTADO SE ENCONTRA NESSA PÁGINA:** https://github.com/GuiGrecov/WebScraping-Glassdoor-Salary-/tree/main/datas
 
 # 6. Arquiterura de Web Scraping
-
+<br>
 ![image](https://user-images.githubusercontent.com/94385953/150645445-5704eb79-ea64-4ede-aae3-8e089071626a.png)
-
+<br>
 * **JOB 1:** Gerar um arquivo individual para cada página que o usuário analisou pertinente. Nessa etapa usamos a função: webscraping_glassdoor(). Para roadr essa função comentada anteriormente precisamos somente salvar essas URL's em variáveis - no Notebook utilizei variáveis com nomes "page1", "page2", "page3",...
 *  **JOB 2:** Para conseguir fazer a limpeza de Dados utilizamos funções do tipo REGEX. Foi a saída mais fácil que encontrei para puxar os arquivo em um formato mais amigável para o usuário. 
 * **JOB 3:** Nesta parte das tarefas fizemos uma função nomeada como juntar_df() a qual precisa receber uma "lista" com todas as variáveis selecionada na etapa anterior. *Exemplo: No job 1 e 2 eu selecionei duas páginas para fazer o Scraping - "page1" e "page2". Com isso nesta etapa preciso agrupar essas duas variáveis em uma lista e depois colocar essa lista na função juntar_df(), desta forma: juntar_df(page_total).*
