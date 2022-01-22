@@ -29,8 +29,12 @@ Na imagem acima vemos que na maioria dos casos, vamos ter mais de uma página pa
 
 # 4. Limitações 
 
-Como esse código participa de uma extração de dados que foram inseridos anonimamente, pode haver alguns erros nos valores de alguns salários. **RECOMENDAÇÕES:** Excluir os Outliers caso esse código for feito em produção. 
-
+Como esse código participa de uma extração de dados que foram inseridos anonimamente, pode haver alguns erros nos valores de alguns salários. **RECOMENDAÇÕES:** Caso queira retirar alguns insight dos dados, vale retirar os outliers. Por se tratar de dados anônimos e queremos um "norte" de valor em salários para pagarmos dentro da nossa empresa.
 
 # 5. Resultados
+
+![image](https://user-images.githubusercontent.com/94385953/150644908-54c974db-d671-4c0a-96e7-53feced055e4.png)
+
+Com esse nosso código seguindo nossas funções conseguimos gerar a tabela acima. Conseguimos agora salvar esse csv em formato excel e mandar de forma automática para o CEO da empresa em cada começo de semana ou em cada mês. 
+
 
