@@ -37,6 +37,8 @@ Como esse código participa de uma extração de dados que foram inseridos anoni
 
 Com esse nosso código seguindo nossas funções conseguimos gerar a tabela acima. Conseguimos agora salvar esse csv em formato excel e mandar de forma automática para o CEO da empresa em cada começo de semana ou em cada mês. 
 
+**O RESULTADO SE ENCONTRA NESSA PÁGINA:** https://github.com/GuiGrecov/WebScraping-Glassdoor-Salary-/tree/main/datas
+
 # 6. Arquiterura de Web Scraping
 
 ![image](https://user-images.githubusercontent.com/94385953/150645445-5704eb79-ea64-4ede-aae3-8e089071626a.png)
