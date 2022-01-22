@@ -42,7 +42,7 @@ Com esse nosso código seguindo nossas funções conseguimos gerar a tabela acim
 **O RESULTADO SE ENCONTRA NESSA PÁGINA:** https://github.com/GuiGrecov/WebScraping-Glassdoor-Salary-/tree/main/datas
 
 # 6. Arquiterura de Web Scraping
-<br>
+
 ![image](https://user-images.githubusercontent.com/94385953/150645445-5704eb79-ea64-4ede-aae3-8e089071626a.png)
 <br>
 * **JOB 1:** Gerar um arquivo individual para cada página que o usuário analisou pertinente. Nessa etapa usamos a função: webscraping_glassdoor(). Para roadr essa função comentada anteriormente precisamos somente salvar essas URL's em variáveis - no Notebook utilizei variáveis com nomes "page1", "page2", "page3",...
