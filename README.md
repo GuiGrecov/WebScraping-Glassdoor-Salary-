@@ -8,6 +8,7 @@
 
 Glassdoor é um site americano no qual funcionários atuais e ex-funcionários avaliam empresas anonimamente. O Glassdoor também permite que os usuários enviem e visualizem salários anonimamente, bem como pesquisem e se candidatem a empregos em sua plataforma.
 
+
 # 2. Problema de Negócio 
 
 O CEO precisa saber quanto as empresas estão pagando para dois cargos: People Analytics e Data Science. O CEO já conta com uma pesquisa salarial feito por uma consultoria, porém gostaria de fazer esse bate nos valores. Para conseguir comparar a agressividade com as outras empresas. 
@@ -49,6 +50,11 @@ Com esse nosso código seguindo nossas funções conseguimos gerar a tabela acim
 *  **JOB 2:** Para conseguir fazer a limpeza de Dados utilizamos funções do tipo REGEX. Foi a saída mais fácil que encontrei para puxar os arquivo em um formato mais amigável para o usuário. 
 * **JOB 3:** Nesta parte das tarefas fizemos uma função nomeada como juntar_df() a qual precisa receber uma "lista" com todas as variáveis selecionada na etapa anterior. *Exemplo: No job 1 e 2 eu selecionei duas páginas para fazer o Scraping - "page1" e "page2". Com isso nesta etapa preciso agrupar essas duas variáveis em uma lista e depois colocar essa lista na função juntar_df(), desta forma: juntar_df(page_total).*
 * **JOB 4** Essa etapa é clásscia em qualquer trabalho de Web Scraping somente geramos um arquivo CSV ou um XLS com a tabela feita durante as outras etapas. 
+
+## 6.1 Arquitura e sua Biblioteca 
+
+Para conseguir fazer os JOB. 1 e JOB 2 - utilizamos a **BEAUTIFUL SOUP** uma biblioteca em Python que é capaz de puxar as informações em HTML dos sites. Essa biblioteca roda de uma forma leve e muito rápida. <br>
+Eu recomendo muito essa biblioteca par quem está começando a fazer os primeiros Scraping. Agora se você já entende de Scraping e gostaria se aprofundar eu recomendo utilizar a **SELENIUM** uma biblioteca com algumas funções mais inteligentes. Já fiz alguns projetos que utilizei tanto a **SELENIUM**, como a **BEAUTIFUL SOUP** juntas. 
 
 # 7. Otimizações Futuras
 
